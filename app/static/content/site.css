@@ -1,0 +1,217 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+nav {
+  padding: 10px 15px 10px 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > h2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  padding: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border-width: 2px;
+  background-color: inherit;
+}
+
+.btn:hover:enabled {
+  /* using `:enabled` ensures styling will not be applied to disabled buttons. */
+  cursor: pointer;
+  background-color: #fbe80f;
+}
+
+.btn-danger:hover {
+  background-color: #ff4444;
+}
+
+.info {
+  font-size: 12px;
+}
+
+.important {
+  color: #ff4444;
+}
+
+.form {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  text-align: left;
+  flex-direction: column;
+}
+
+.checkout {
+  text-align: left;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+}
+
+.checkout * {
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
+  width: inherit;
+  padding: 10px;
+}
+
+.checkout fieldset * .row {
+  flex-direction: column;
+  width: inherit;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px;
+}
+
+.center {
+  align-items: center;
+}
+
+.checkout input,
+.checkout select,
+.checkout button {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.submit > button {
+  margin: 10px;
+}
+
+.cancel {
+  text-decoration: none;
+  color: blue;
+}
+
+.tocheckout-btn {
+  display: block;
+  width: fit-content;
+  padding: 0 50px 25% 0;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#cart-items-no {
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  margin: 0;
+  color: white;
+  background-color: black;
+  border-radius: 9px;
+}
+
+.reservation {
+  justify-content: center;
+  width: 50%;
+  margin: 0 auto;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px 5px;
+  margin-bottom: 20px;
+}
+
+.cars-list {
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px 10px;
+  margin-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-item {
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.price {
+  font-size: 14px;
+  padding: 1px 5px 1px 5px;
+  color: white;
+  background-color: green;
+}
+
+.card-content div,
+p {
+  padding-bottom: 10px;
+}
+
+.card-content > .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-content > .row > .row {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.days-rented {
+  width: 50px;
+  margin-left: 10px;
+}
+
+.card-text {
+  color: #333;
+}
+
+.card-link {
+  color: #007bff;
+}
+
+/* Utility Styles */
+/* styles for validation helpers */
+input.input-validation-error {
+  border: 2px solid #b94a48;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-col {
+  display: grid;
+}

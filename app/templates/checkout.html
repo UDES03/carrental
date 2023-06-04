@@ -1,0 +1,90 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Hertz Uts
+{% endblock %}
+
+{% block navTitle %}
+Check Out
+{% endblock %}
+
+{% block content %}
+<div class="form">
+    <h2>Almost there!</h2>
+    <h4>Fill out the form to complete your reservations.</h4>
+    <p class="info"><span class="important">*</span> denotes required fields</p>
+
+    <div class="checkout">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="row">
+                <label>First Name<span class="important">*</span>
+                    <input type="text"
+                           name="fName"
+                           id="fName">
+                </label>
+            </div>
+            <div class="row">
+                <label>Last Name<span class="important">*</span>
+                    <input type="text"
+                           name="lName"
+                           id="lName">
+                </label>
+            </div>
+            <div class="row">
+                <label>Email<span class="important">*</span>
+                    <input type="text"
+                           name="email"
+                           id="email">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <div>
+            </div>
+            <div class="row">
+                <label>Address Line 1
+                    <span class="important">*</span>
+                    <input type="text"
+                           name="address1"
+                           id="address1">
+                </label>
+            </div>
+            <div class="row">
+                <label>Address Line 2
+                    <input type="text"
+                           name="address2">
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Payment Method<span class="important">*</span></legend>
+            <div class="row">
+                <p id="totalPrice">Total: AUD 799</p>
+                <p id="bond"></p>
+            </div>
+            <div class="row">
+                <select name="pay"
+                        id="payment">
+                    <option value="visa">VISA</option>
+                    <option value="mastercard">Mastercard</option>
+                    <option value="paypal">Paypal</option>
+                    <option value="poli">POLi</option>
+                    <option value="eftpos">EFTPOS</option>
+                </select>
+            </div>
+            </label>
+        </fieldset>
+        <div class="submit row">
+            <button class="btn"
+                    id="book-button">Check Out</button>
+            <a href="/reserve">
+                <button class="btn">Edit Reservation</button>
+            </a>
+            <a href="/"
+               class="cancel">Cancel</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
